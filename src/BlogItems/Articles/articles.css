@@ -1,0 +1,142 @@
+.main {
+  padding-top: 5rem;
+  overflow-x: hidden;
+}
+.main h1 {
+  font-family: "roboto";
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 3rem;
+  max-width: 1400px;
+  margin: auto;
+}
+.article_line {
+  width: 50px;
+  height: 2px;
+  margin-left: 2rem;
+  background: #010048;
+  margin-top: 4px;
+}
+.article img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.article h4 {
+  font-family: "roboto";
+  font-size: 18px;
+  line-height: 2rem;
+  color: #010048;
+  font-weight: 800;
+  padding-left: 1rem;
+}
+.date {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: red 2px solid;
+}
+.article p {
+  font-family: "inter";
+  padding-bottom: 3rem;
+  font-size: 15px;
+  padding-left: 1rem;
+  font-weight: 800;
+  line-height: 2rem;
+  color: #03002e;
+}
+.article {
+  position: relative;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 1px 0px 50px 25px rgba(0, 0, 0, 0.1);
+}
+.article a {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  background: #010048;
+  padding: 6px;
+  font-family: "roboto";
+  font-size: 16px;
+  letter-spacing: 0.02rem;
+  border-radius: 5px;
+  width: 140px;
+  left: 3%;
+  margin-bottom: 0.5rem;
+}
+
+/* @media screen and (min-width: 1280px) {
+  .article {
+    max-width: 1200px;
+    margin: auto;
+  }
+} */
+@media screen and (max-width: 900px) {
+  .articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .article {
+    position: relative;
+    width: 600px;
+  }
+
+  .article img {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main h1 {
+    font-size: 17px;
+  }
+  .article_line {
+    width: 60px;
+  }
+  .article {
+    width: 350px;
+  }
+  .article img {
+    height: 200px;
+  }
+  .article h4 {
+    font-size: 12px;
+  }
+  .article p {
+    font-size: 10px;
+  }
+  .article a {
+    width: 60px;
+    padding: 4px;
+    font-size: 9px;
+  }
+  .article_line {
+    margin-left: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .article img {
+    height: 150px;
+  }
+  .article {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .article img {
+    height: 150px;
+  }
+}
